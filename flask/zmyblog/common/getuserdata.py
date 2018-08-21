@@ -19,7 +19,7 @@ md5x = hashlib.md5()
 # 获取个人信息
 def getuserdata():
     dbkeys = ("id","username","userimg","userintroduction")
-    data = select_one_dict("SELECT %s FROM %s ;" % ("id,username,headimg,introduce", "dbtest.user"), dbkeys)
+    data = select_one_dict("SELECT %s FROM %s ;" % ("id,username,headimg,introduce", "blog.user"), dbkeys)
     if data:
         print(data)
         return data

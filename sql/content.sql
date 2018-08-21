@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `content`;
 CREATE TABLE `content` (
   `title` varchar(30) CHARACTER SET utf8 NOT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `content` longtext CHARACTER SET utf8mb4 NOT NULL,
+  `content` longtext CHARACTER SET utf8 NOT NULL,
   `typeid` int(10) NOT NULL,
   `userid` int(10) NOT NULL,
   PRIMARY KEY (`id`)

@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 import traceback
 
 
-engine = create_engine('mysql+pymysql://root:root123456@localhost:3306/dbtest?charset=utf8',
+engine = create_engine('mysql+pymysql://root@localhost:3306/blog?charset=utf8',
                                     pool_size=20,
                                     max_overflow=100,
                                     pool_recycle=7200,
